@@ -1,0 +1,1 @@
+import{d as s,o,c as a,a as _,t as c,N as n,_ as i}from"./index.5a90395c.js";const l={class:"title_box"},r={class:"title"},d=s({__name:"title-box",props:{title:{type:String,defalut:""}},setup(t){return(e,p)=>(o(),a("div",l,[_("span",r,c(t.title),1),n(e.$slots,"right",{},void 0,!0)]))}}),f=i(d,[["__scopeId","data-v-7d0cfc9c"]]);export{f as default};
