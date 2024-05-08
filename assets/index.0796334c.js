@@ -1,1 +1,0 @@
-const a=[{value:0,label:"\u5F85\u53D1\u5E03"},{value:1,label:"\u53D1\u5E03\u4E2D"},{value:"2, 3",label:"\u53D1\u5E03\u6210\u529F"},{value:4,label:"\u53D1\u5E03\u5931\u8D25"}],l=u=>({"-1":"\u5BA1\u6838\u5931\u8D25",0:"\u5F85\u53D1\u5E03",1:"\u53D1\u5E03\u4E2D",2:"\u53D1\u5E03\u6210\u529F",3:"\u53D1\u5E03\u6210\u529F",4:"\u53D1\u5E03\u5931\u8D25"})[u];export{l as c,a as s};

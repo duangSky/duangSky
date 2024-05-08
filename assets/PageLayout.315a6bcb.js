@@ -1,1 +1,0 @@
-import{_ as a,o,c as _,a as s,N as t}from"./index.5a90395c.js";const c={class:"page_layout"},n={class:"set"},r={class:"preview"},d={__name:"PageLayout",setup(u){return(e,i)=>(o(),_("div",c,[s("div",n,[t(e.$slots,"set",{},void 0,!0)]),s("div",r,[t(e.$slots,"preview",{},void 0,!0)])]))}},p=a(d,[["__scopeId","data-v-fe083834"]]);export{p as default};
