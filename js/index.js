@@ -28,7 +28,7 @@ const isVisible = el => {
 }
 const handleScroll = () => {
   if (isVisible(f_box)) {
-    gsap.to('.first_box', { x: 660 });
+    gsap.to('.first_box', { x: 360 });
   } else {
     gsap.to('.first_box', { x: 0 });
   }
