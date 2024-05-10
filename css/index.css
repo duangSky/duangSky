@@ -1,11 +1,37 @@
-#box {
-  width: 100px;
-  height: 100px;
+* {
+  padding: 0;
+  margin: 0;
+}
+#main {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+#main::-webkit-scrollbar {
+  width: 0px;
+}
+.first,
+.second,
+.third {
+  height: 100%;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+.first {
   background-color: pink;
 }
-.box1 {
-  margin: 660px 0;
-  width: 200px;
-  height: 200px;
+.second {
   background-color: skyblue;
+}
+.third {
+  background-color: #000;
+}
+.first_box,
+.second_box,
+.third_box {
+  margin: 100px 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
 }
