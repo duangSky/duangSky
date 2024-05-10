@@ -1,86 +1,17 @@
 <!DOCTYPE html>
-<html lang="zh">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="./img/steak.svg" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="./img/steak.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>独秀</title>
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
-    <link rel="stylesheet" href="./css/demo.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-
-<body class="light">
-    <div class="container">
-        <main>
-            <ul class='slider'>
-                <li class='item' style="background-image: url('https://cdn.mos.cms.futurecdn.net/dP3N4qnEZ4tCTCLq59iysd.jpg')">
-                    <div class='content'>
-                        <h2 class='title'>"Lossless Youths"</h2>
-                        <p class='description'> Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-                            praesentium nisi. Id laboriosam ipsam enim. </p>
-                        <button>Read More</button>
-                    </div>
-                </li>
-                <li class='item' style="background-image: url('https://i.redd.it/tc0aqpv92pn21.jpg')">
-                    <div class='content'>
-                        <h2 class='title'>"Estrange Bond"</h2>
-                        <p class='description'> Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-                            praesentium nisi. Id laboriosam ipsam enim. </p>
-                        <button>Read More</button>
-                    </div>
-                </li>
-                <li class='item' style="background-image: url('https://wharferj.files.wordpress.com/2015/11/bio_north.jpg')">
-                    <div class='content'>
-                        <h2 class='title'>"The Gate Keeper"</h2>
-                        <p class='description'> Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-                            praesentium nisi. Id laboriosam ipsam enim. </p>
-                        <button>Read More</button>
-                    </div>
-                </li>
-                <li class='item' style="background-image: url('https://images7.alphacoders.com/878/878663.jpg')">
-                    <div class='content'>
-                        <h2 class='title'>"Last Trace Of Us"</h2>
-                        <p class='description'>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
-                        </p>
-                        <button>Read More</button>
-                    </div>
-                </li>
-                <li class='item' style="background-image: url('https://da.se/app/uploads/2015/09/simon-december1994.jpg')">
-                    <div class='content'>
-                        <h2 class='title'>"The Migration"</h2>
-                        <p class='description'> Lorem ipsum, dolor sit amet consectetur
-                            adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-                            praesentium nisi. Id laboriosam ipsam enim. </p>
-                        <button>Read More</button>
-                    </div>
-                </li>
-            </ul>
-            <nav class='nav'>
-                <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
-                <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
-            </nav>
-        </main>
-    </div>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <!-- <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
-    <script>
-        const slider = document.querySelector('.slider');
-
-        function activate(e) {
-            const items = document.querySelectorAll('.item');
-            e.target.matches('.next') && slider.append(items[0]);
-            e.target.matches('.prev') && slider.prepend(items[items.length - 1]);
-        }
-
-        document.addEventListener('click', activate, false);
-
-    </script>
+<body>
+    <div id="box"></div>
+    <button id="btn">按钮</button>
+    <div class="box1"></div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
-
 </html>
