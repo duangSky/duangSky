@@ -25,7 +25,7 @@ const isVisible = el => {
   return gapTop < (window.innerHeight - height / 2) && gapTop > - height / 2 && gapLeft < window.innerWidth && gapLeft > 0;
 }
 let arr = [
-  { el: $('.first_box'), cl: '.first_box', x: 360 },
+  // { el: $('.first_box'), cl: '.first_box', x: 360 },
   { el: $('.second_box'), cl: '.second_box', x: 660 },
   { el: $('.third_box'), cl: '.third_box', x: 880 },
 ]
@@ -37,6 +37,26 @@ const handleScroll = () => {
       gsap.to(val.el, { x: 0 })
     }
   })
+  if(isVisible($('.first_box'))) {
+    let t = 0;
+    for(let k of $('.first_box').siblings()) {
+      // let t1 = 0;
+      setTimeout(() => {
+        for(let key of k.getElementsByClassName('animated')) {
+          key.style.display = 'block';
+          key.classList.add('rollIn');
+        }
+      }, t);
+      t+=600;
+    }
+  } else {
+    for(let k of $('.first_box').siblings()) {
+      for(let key of k.getElementsByClassName('animated')) {
+        key.style.display = 'none';
+        key.classList.remove('rollIn');
+      }
+    }
+  }
 }
 handleScroll();
 $('#main').on('scroll', throttle(handleScroll, 200))

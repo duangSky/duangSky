@@ -35,3 +35,6 @@
   height: 100px;
   background-color: #fff;
 }
+.first_box .animated {
+  display: none;
+}

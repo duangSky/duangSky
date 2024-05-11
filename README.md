@@ -4,7 +4,7 @@
 
 #### 访问网址
 
-https://duangsky.github.io/duangSky/
+https://duangsky.github.io/duangSky/index.html
 
 #### 特技
 
